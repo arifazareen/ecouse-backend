@@ -21,7 +21,9 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '17'
-          distribution: 'adoptopenjdk'
+          distribution: 'temurin'
+          java-package: 'jdk'
+          architecture: 'x64'
 
       # Step 3: Build the project using Maven
       - name: Build with Maven
